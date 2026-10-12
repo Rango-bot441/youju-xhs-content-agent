@@ -1,0 +1,9 @@
+{
+  "name": "xhs-content-agent",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"start": "node start.mjs", "start:background": "node start.mjs --background", "status": "node start.mjs --status", "stop": "node start.mjs --stop", "evaluate": "node start.mjs --evaluate", "test": "node --test tests/*.test.mjs"},
+  "engines": {"node": ">=24.5"},
+  "dependencies": {"linkedom": "^0.18.12"}
+}

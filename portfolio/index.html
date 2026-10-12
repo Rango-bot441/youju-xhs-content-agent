@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向区域教育内容获客的 AI 工作流面试作品，展示真实业务经验、来源核验和线索承接。">
+  <title>区域教育自然流获客 · AI 内容工作流</title>
+  <style>
+    :root{--ink:#1b241f;--muted:#64716a;--paper:#f6f7f2;--white:#fff;--line:#dce3da;--green:#166b50;--green-2:#dcefe5;--orange:#c84d28;--orange-2:#fff0e7;--yellow:#f3c75f;--shadow:0 18px 48px rgba(26,54,41,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:22px 0;color:var(--muted);font-size:13px}.brand{display:flex;gap:10px;align-items:center;color:var(--ink);font-weight:800}.mark{width:28px;height:28px;display:grid;place-items:center;background:var(--green);color:#fff;border-radius:7px}.hero{padding:48px 0 62px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:0;color:var(--green);text-transform:uppercase}.hero h1{font-size:clamp(38px,5vw,60px);line-height:1.12;max-width:650px;margin:16px 0 20px;letter-spacing:0}.hero p{font-size:17px;color:var(--muted);max-width:630px;margin:0}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--line);background:var(--white)}.btn.primary{background:var(--green);border-color:var(--green);color:#fff}.hero-board{background:#172a22;color:#f4f4e9;padding:24px;border-radius:8px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-board:after{content:"";position:absolute;width:130px;height:130px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-24px;top:-55px}.board-head{display:flex;justify-content:space-between;color:#b8c9be;font-size:11px;margin-bottom:20px}.flow{display:grid;gap:10px}.flow-row{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;padding:13px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:5px}.flow-num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#294b3c;color:#e4f2e7;font-size:12px;font-weight:800}.flow-row strong{display:block;font-size:14px}.flow-row small{color:#b8c9be}.flow-status{font-size:11px;color:#f5cc69}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);background:rgba(255,255,255,.4)}.stat{padding:22px 20px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:28px;line-height:1.15;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}section{padding:70px 0}.section-head{display:grid;grid-template-columns:210px 1fr;gap:30px;margin-bottom:30px}.section-label{color:var(--green);font-size:12px;font-weight:800}.section-head h2{margin:0;font-size:30px;line-height:1.2;letter-spacing:0}.section-head p{margin:9px 0 0;color:var(--muted);max-width:680px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.panel{background:var(--white);border:1px solid var(--line);border-radius:7px;padding:22px}.panel h3{margin:0 0 8px;font-size:18px}.panel p{margin:0;color:var(--muted);font-size:14px}.step{display:flex;gap:14px;padding:14px 0;border-top:1px solid #edf0eb}.step:first-of-type{border-top:0}.step-no{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--green-2);color:var(--green);font-weight:800;font-size:12px}.step strong{display:block;font-size:14px}.step span{display:block;font-size:13px;color:var(--muted)}.gate{background:#fff9e9;border:1px solid #f0dda9;border-left:4px solid var(--yellow);padding:16px 18px;border-radius:5px;color:#5e4b1e;margin-top:16px;font-size:13px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{background:var(--green-2);color:var(--green);font-size:11px;padding:4px 8px;border-radius:4px}.tag.warm{background:var(--orange-2);color:var(--orange)}.proof{background:#eef3ed}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.metric{padding:16px;background:#fff;border:1px solid var(--line);border-radius:5px}.metric strong{display:block;font-size:23px;color:var(--green)}.metric span{font-size:12px;color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.list{padding:0;margin:14px 0 0;list-style:none}.list li{padding:9px 0;border-top:1px solid #edf0eb;font-size:13px}.list li:before{content:"✓";color:var(--green);font-weight:800;margin-right:9px}.lead-fields{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}.field{padding:12px;background:#f5f7f2;border:1px solid var(--line);border-radius:5px}.field small{display:block;font-size:11px;color:var(--muted)}.field b{font-size:13px}.script{background:#172a22;color:#f3f5ec;padding:24px;border-radius:7px;font-size:15px}.script p{margin:0}.script-mark{color:#f2c65d;font-weight:800}.foot{border-top:1px solid var(--line);padding:22px 0 36px;color:var(--muted);font-size:12px}.foot strong{color:var(--ink)}.source-note{font-size:12px;color:var(--muted);margin-top:12px}.source-note a{color:var(--green)}
+    @media(max-width:760px){.wrap{width:min(100% - 28px,560px)}.hero{padding:28px 0 38px;grid-template-columns:1fr;gap:28px}.hero h1{font-size:40px}.hero p{font-size:15px}.hero-board{padding:18px}.stats{grid-template-columns:repeat(2,1fr)}.stat{padding:15px;border-bottom:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat:nth-child(3){border-bottom:0}.stat:last-child{border-bottom:0}.section-head{grid-template-columns:1fr;gap:8px}.section-head h2{font-size:26px}.grid-2,.split{grid-template-columns:1fr}.metric-grid,.lead-fields{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.topbar{padding:16px 0}.actions .btn{flex:1;justify-content:center}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar"><div class="brand"><span class="mark">张</span><span>张彪 · 面试作品</span></div><span>教育内容增长 / 小红书 / AI 工作流</span></header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">面向 AI 自然流获客运营岗位</div>
+        <h1>把家长关心的问题，<br>变成可核验的获客内容。</h1>
+        <p>我做过教育行业小红书矩阵和自然流获客。这个作品把已有的内容工作台，整理成一条更贴近岗位的流程：找资料、做图文、核事实、接线索、看结果。</p>
+        <div class="actions"><a class="btn primary" href="#workflow">看内容怎么做 ↓</a><a class="btn" href="#proof">看我做过什么 ↓</a></div>
+      </div>
+      <div class="hero-board" aria-label="五步内容获客流程">
+        <div class="board-head"><span>区域教育内容工作流</span><span>DEMO · 非自动发布</span></div>
+        <div class="flow">
+          <div class="flow-row"><span class="flow-num">1</span><div><strong>找到官方资料</strong><small>政策 / 学校 / 竞赛 / 家长问题</small></div><span class="flow-status">先找来源</span></div>
+          <div class="flow-row"><span class="flow-num">2</span><div><strong>AI 整理选题和初稿</strong><small>标题 / 正文 / 图文页结构</small></div><span class="flow-status">辅助生产</span></div>
+          <div class="flow-row"><span class="flow-num">3</span><div><strong>人工对照原文核实</strong><small>不确定的信息不发布</small></div><span class="flow-status">必须人工</span></div>
+          <div class="flow-row"><span class="flow-num">4</span><div><strong>按需求整理咨询</strong><small>区域 / 年级 / 学科 / 需求</small></div><span class="flow-status">交给销售</span></div>
+          <div class="flow-row"><span class="flow-num">5</span><div><strong>复盘有效线索</strong><small>看咨询质量，不只看曝光</small></div><span class="flow-status">再迭代</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="wrap stats" id="proof" aria-label="小红书项目结果"><div class="stat"><strong>40–50</strong><span>小红书账号矩阵</span></div><div class="stat"><strong>12 万</strong><span>新增粉丝</span></div><div class="stat"><strong>4000+</strong><span>有效线索</span></div><div class="stat"><strong>80 万</strong><span>项目 GMV</span></div></div>
+
+    <section class="wrap" id="workflow">
+      <div class="section-head"><div class="section-label">01 / 怎么做内容</div><div><h2>一条内容，从问题到交接</h2><p>先解决“内容是否有用、事实是否可靠”，再考虑怎么获得精准咨询。AI 负责整理和起草，人负责判断和发布。</p></div></div>
+      <div class="grid-2">
+        <article class="panel"><h3>内容生产：AI 帮忙，人来把关</h3>
+          <div class="step"><div class="step-no">1</div><div><strong>整理输入</strong><span>选择地区、年级、学科和家长问题；导入官方通知或已确认的业务资料。</span></div></div>
+          <div class="step"><div class="step-no">2</div><div><strong>生成备选稿</strong><span>AI 提供多个选题角度、标题、正文和图文页提纲，不把初稿直接当成成品。</span></div></div>
+          <div class="step"><div class="step-no">3</div><div><strong>逐条核对事实</strong><span>对照来源原文检查时间、对象、条件和数字；没有出处的句子先删掉或补资料。</span></div></div>
+          <div class="step"><div class="step-no">4</div><div><strong>人工修改后再发布</strong><span>检查家长是否看得懂、表达是否自然、内容是否符合账号定位与平台要求。</span></div></div>
+          <div class="gate"><b>演示边界：</b>目前没有核实到可直接引用的海淀升学政策原文，所以本页不展示具体政策结论。真实制作时先补官方来源，再生成对应内容。</div>
+        </article>
+        <article class="panel"><h3>一份图文交付包含什么</h3><p>适用于小红书图文；小绿书版本需要再按平台样式调整，不把同一稿不加修改地复制过去。</p>
+          <div class="tags"><span class="tag">选题角度</span><span class="tag">标题备选</span><span class="tag">封面主句</span><span class="tag">图文页提纲</span><span class="tag">正文与评论引导</span><span class="tag warm">来源与待核项</span></div>
+          <ul class="list"><li>先用真实家长的问题确定内容切口。</li><li>政策、学校、竞赛事实附来源，观点与建议明确区分。</li><li>缺资料时列出问题，不让 AI 补写结论。</li><li>记录 AI 初稿与人工修改，便于复盘哪些表达需要调整。</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap">
+        <div class="section-head"><div class="section-label">02 / 真实业务经验</div><div><h2>先小范围跑通，再把矩阵做大</h2><p>以下数字来自过往小红书素人种草项目，不归因于这次 AI 工作流原型。</p></div></div>
+        <div class="grid-2">
+          <article class="panel"><h3>我过去做过</h3><ul class="list"><li>先用 3–5 个账号验证内容获客和销售承接，再扩至 40–50 个账号。</li><li>面向小学 3–6 年级家长，按城市、人设与需求区分内容角度。</li><li>用干货内容建立信任，搭配转化内容和评论、私信等承接入口。</li><li>沉淀选题库、素材库和内容转化 SOP，支持协作团队执行。</li></ul></article>
+          <article class="panel"><h3>项目结果</h3><div class="metric-grid"><div class="metric"><strong>12 万</strong><span>新增粉丝</span></div><div class="metric"><strong>4000+</strong><span>有效线索</span></div><div class="metric"><strong>80 万</strong><span>总 GMV</span></div><div class="metric"><strong>3–5 → 40–50</strong><span>账号验证后扩量</span></div></div><p class="source-note">来源：个人工作经历材料，项目⑦“小红书素人种草获客”。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head"><div class="section-label">03 / 线索怎么交接</div><div><h2>把“有人问”整理成“销售能跟进”</h2><p>不替销售判断或承诺结果，只把用户明确表达的信息结构化，缺失信息标为待确认。</p></div></div>
+      <div class="panel"><p>评论或私信出现明确需求后，整理成一条交接记录：</p><div class="lead-fields"><div class="field"><small>地区</small><b>用户明确提及</b></div><div class="field"><small>年级</small><b>用户明确提及</b></div><div class="field"><small>学科</small><b>用户明确提及</b></div><div class="field"><small>需求与下一步</small><b>原话摘要 / 待回访</b></div></div><div class="gate"><b>边界：</b>不根据猜测补全年级、预算或购买意向；只记录用户提供的信息，按团队流程转交销售。</div></div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head"><div class="section-label">04 / AI 作品能力</div><div><h2>不是只生成，而是能追溯、能分拣、能复盘</h2><p>本地“小红书内容工作台”已实现来源导入、区域资料台账、引用定位、独立质检、人工版本留痕、线索初判、销售交接和案例回放，可用于演示内容如何从初稿走到可审阅、可跟进的工作流。</p></div></div>
+      <div class="split"><article class="panel"><h3>现在可以直接跑</h3><ul class="list"><li>基于导入资料生成选题和图文草稿，并保留来源片段。</li><li>对一条评论或私信做 AI 初步分拣：地区、年级、学科、需求、待追问和建议回复。</li><li>人工确认后标记“待销售确认 / 已交接”，导出销售交接 CSV。</li><li>保存人工修改版本，回放输入、AI、人工、核验和交付过程。</li></ul></article><article class="panel"><h3>仍然明确不自动化</h3><ul class="list"><li>未接小红书/小绿书真实账号发布或实时私信。</li><li>未接入实时区域政策数据；资料时效与事实仍需人工核验。</li><li>未用真实发布数据验证 AI 提效或线索增长。</li><li>线索初判不等于成交概率，演示数据明确标记为虚构练习。</li></ul></article></div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head"><div class="section-label">05 / 面试时怎么讲</div><div><h2>一分钟讲清楚</h2><p>你可以按自己的语气说，不需要讲技术名词。</p></div></div>
+      <div class="script"><p><span class="script-mark">“</span>我过去做过教育行业的小红书自然流获客，先用 3 到 5 个账号验证，再扩到 40 到 50 个账号，项目新增粉丝 12 万，获得 4000 多条有效线索。我理解这个岗位要的不只是发内容，而是找到本地家长真正关心的问题，最后拿到销售能跟进的精准用户。AI 我会用来整理资料、扩展选题和起图文初稿，但政策、学校和竞赛信息一定要回到来源逐条核验，没有出处就不发。我也做了一个本地小红书内容工作台，可以演示引用原文、人工改稿留痕和再次质检。它目前是工作流原型，还没有证明能提升真实账号线索，我不会把历史项目业绩说成 AI 带来的结果。<span class="script-mark">”</span></p></div>
+    </section>
+  </main>
+  <footer class="wrap foot"><strong>作品状态：本地面试演示页</strong> · 不自动发布内容 · 区域政策信息需补充官方来源后再制作</footer>
+</body>
+</html>
